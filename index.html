@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShiroWisper</title>
+  <meta name="description" content="Hold Fn, talk, and let go. The words paste into the app you were using.">
+  <meta name="theme-color" content="#f4f5f7">
+  <meta property="og:title" content="ShiroWisper">
+  <meta property="og:description" content="Hold Fn, talk, and let go. The words paste into the app you were using.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="app.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ShiroWisper">
+  <meta name="twitter:description" content="Hold Fn, talk, and let go. The words paste into the app you were using.">
+  <meta name="twitter:image" content="app.png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="./">
+      <span class="mark" aria-hidden="true"></span>
+      ShiroWisper
+    </a>
+    <a class="quiet" href="ShiroWisper-1.0.0-mac.zip">Download</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Hold Fn. Talk.<br>Let go.</h1>
+      <p class="lede">The words paste into the app you were using.</p>
+      <p class="cta">
+        <a class="button" href="ShiroWisper-1.0.0-mac.zip">Download for Mac</a>
+      </p>
+      <p class="fine">Version 1.0.0 · macOS 13 or later · Apple silicon · 21 MB</p>
+    </section>
+
+    <figure class="shot">
+      <img src="app.png" width="2080" height="1600" alt="ShiroWisper, with a blue hold button and notes for hold, hands-free, and voice edit.">
+    </figure>
+
+    <section class="setup" id="install">
+      <h2>After you download</h2>
+      <p class="lede">macOS blocks an app it has not seen before. The first open takes a minute.</p>
+      <ol>
+        <li>Unzip the download and move ShiroWisper into Applications.</li>
+        <li>Right-click ShiroWisper, choose Open, then Open again. If macOS still blocks it, open System Settings → Privacy &amp; Security and choose Open Anyway.</li>
+        <li>Open ShiroWisper and allow the microphone.</li>
+        <li>In System Settings → Privacy &amp; Security → Accessibility, turn ShiroWisper on. If a row named Python is listed, leave it off.</li>
+        <li>Quit ShiroWisper and open it again. The hotkey starts listening after that.</li>
+        <li>In Settings, paste a Gemini key from <a href="https://aistudio.google.com/apikey" rel="noopener">Google AI Studio</a>. Choose Test key, then Save settings.</li>
+      </ol>
+      <p class="note">If it hears you and nothing pastes, turn Accessibility off and on, then quit and reopen.</p>
+      <p class="note">Speech goes to Google with that key. The key stays on your Mac, in a file only your account can read. Dictation is about half a cent a minute.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>ShiroWisper 1.0.0</p>
+    <p>Mac only. Windows and Linux are not available.</p>
+  </footer>
+</body>
+</html>

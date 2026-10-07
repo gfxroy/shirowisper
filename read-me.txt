@@ -1,0 +1,22 @@
+ShiroWisper 1.0.0
+Mac dictation. Hold a key, speak, and the words paste into the app you were using.
+
+macOS 13 or later. Apple silicon.
+
+After you download
+macOS blocks an app it has not seen before. This takes a minute the first time.
+
+1. Move ShiroWisper into Applications.
+2. Right-click ShiroWisper, choose Open, then Open again. If macOS still blocks it, open System Settings, Privacy & Security, and choose Open Anyway.
+3. Open ShiroWisper and allow the microphone.
+4. In System Settings, Privacy & Security, Accessibility, turn ShiroWisper on. If a row named Python is listed, leave it off.
+5. Quit ShiroWisper and open it again. The hotkey starts listening after that.
+6. In Settings, paste a Gemini key from https://aistudio.google.com/apikey. Choose Test key, then Save settings.
+
+If it hears you and nothing pastes, turn Accessibility off and on, then quit and reopen.
+
+Speech is sent to Google with that key. The key stays on your Mac, in a file only your account can read.
+
+Hold Fn to dictate. Double-tap Fn for hands-free, then tap once to stop. Select text and hold F9 to edit it by voice. Say "scratch that" to drop the last paste. The keys can be changed in Settings.
+
+Windows and Linux are not available.
