@@ -17,3 +17,7 @@ If it hears you and nothing pastes, turn Accessibility off and on, then quit and
 Speech is sent to Google with that key. The key stays on your Mac, in a file only your account can read.
 
 Hold Fn to dictate. Double-tap Fn for hands-free, then tap once to stop. Select text and hold F9 to edit it by voice. Say "scratch that" to drop the last paste. The keys can be changed in Settings.
+
+Windows: unzip ShiroWisper-1.0.0-windows.zip and double-click ShiroWisper. If Windows says it protected your PC, choose More info, then Run anyway. Allow the microphone. Paste a Gemini key. Hold Right Alt.
+
+Linux: extract the archive and run ./install.sh. That installs the microphone and clipboard tools and adds ShiroWisper to your apps. Hold Right Alt. If the hotkey does nothing, an X11 session lets global keys through.

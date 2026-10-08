@@ -238,6 +238,34 @@ footer p, footer a { margin: 0; }
 footer a { text-decoration: none; }
 footer a:hover { color: var(--ink); }
 
+.alts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin: 16px 0 0;
+}
+
+.alts a {
+  color: var(--quiet);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.alts a:hover,
+.alts a[aria-current="true"] { color: var(--ink); }
+
+.os-name {
+  margin: 28px 0 0;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.os-steps[hidden] { display: none !important; }
+
 @media (max-width: 900px) {
   .steps { grid-template-columns: 1fr 1fr; }
 }

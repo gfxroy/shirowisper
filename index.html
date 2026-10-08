@@ -24,18 +24,24 @@
       <span class="mark" aria-hidden="true"></span>
       ShiroWisper
     </a>
-    <a class="nav-download" href="https://github.com/gfxroy/shirowisper/releases/download/v1.0.0/ShiroWisper-1.0.0.dmg">Download</a>
+    <a class="nav-download" id="nav-download" href="https://github.com/gfxroy/shirowisper/releases/download/v1.0.0/ShiroWisper-1.0.0.dmg">Download</a>
   </header>
 
   <main>
     <section class="hero">
-      <p class="eyebrow">Mac dictation</p>
+      <p class="eyebrow">Dictation</p>
       <h1>Speak into <br class="wrap">any app.</h1>
       <p class="lede">Hold a key, talk, and let go. The words paste at the cursor.</p>
       <p class="cta">
-        <a class="button" href="https://github.com/gfxroy/shirowisper/releases/download/v1.0.0/ShiroWisper-1.0.0.dmg">Download for Mac</a>
+        <a class="button" id="download" href="https://github.com/gfxroy/shirowisper/releases/download/v1.0.0/ShiroWisper-1.0.0.dmg">Download for Mac</a>
       </p>
-      <p class="fine">Disk image · 21 MB · macOS 13 or later · Apple silicon</p>
+      <p class="fine" id="fine">Disk image · 21 MB · macOS 13 or later · Apple silicon</p>
+      <p class="alts">
+        <a data-os="mac" href="https://github.com/gfxroy/shirowisper/releases/download/v1.0.0/ShiroWisper-1.0.0.dmg">Mac</a>
+        <a data-os="windows" href="https://github.com/gfxroy/shirowisper/releases/download/v1.0.0/ShiroWisper-1.0.0-windows.zip">Windows</a>
+        <a data-os="linux" href="https://github.com/gfxroy/shirowisper/releases/download/v1.0.0/ShiroWisper-1.0.0-linux-x64.tar.gz">Linux</a>
+        <a data-os="linux-arm" href="https://github.com/gfxroy/shirowisper/releases/download/v1.0.0/ShiroWisper-1.0.0-linux-arm64.tar.gz">Linux ARM</a>
+      </p>
     </section>
 
     <figure class="stage">
@@ -43,37 +49,167 @@
     </figure>
 
     <section class="install" id="install">
-      <h2>Open the disk image.</h2>
-      <p class="lede">Drag ShiroWisper onto Applications. macOS asks for permission once.</p>
-      <div class="steps">
-        <article>
-          <span>01</span>
-          <h3>Drag it across</h3>
-          <p>In the window that opens, drop ShiroWisper on the Applications folder.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Open it once</h3>
-          <p>In Applications, right-click ShiroWisper, choose Open, then Open again. If macOS still blocks it, choose Open Anyway in Privacy &amp; Security.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>Allow it</h3>
-          <p>Turn on the microphone and Accessibility. Leave any row named Python off. Quit ShiroWisper and open it again.</p>
-        </article>
-        <article>
-          <span>04</span>
-          <h3>Add your key</h3>
-          <p>Paste a Gemini key from <a href="https://aistudio.google.com/apikey" rel="noopener">Google AI Studio</a>. Speech goes to Google. The key stays on your Mac.</p>
-        </article>
+      <h2 id="install-title">Install it.</h2>
+      <p class="lede" id="install-lede">The download button matches this computer. The other builds are under it.</p>
+      <div class="os-steps" data-os="mac">
+        <p class="os-name">Mac</p>
+        <div class="steps">
+          <article>
+            <span>01</span>
+            <h3>Drag it across</h3>
+            <p>Open the disk image and drop ShiroWisper on the Applications folder.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Open it once</h3>
+            <p>In Applications, right-click ShiroWisper, choose Open, then Open again. If macOS still blocks it, choose Open Anyway in Privacy &amp; Security.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Allow it</h3>
+            <p>Turn on the microphone and Accessibility. Leave any row named Python off. Quit ShiroWisper and open it again.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Add your key</h3>
+            <p>Paste a Gemini key from <a href="https://aistudio.google.com/apikey" rel="noopener">Google AI Studio</a>. Hold Fn to dictate. Speech goes to Google. The key stays on your Mac.</p>
+          </article>
+        </div>
+        <p class="note">If it hears you and nothing pastes, turn Accessibility off and on, then quit and reopen. Dictation is about half a cent a minute.</p>
       </div>
-      <p class="note">If it hears you and nothing pastes, turn Accessibility off and on, then quit and reopen. Dictation is about half a cent a minute.</p>
+      <div class="os-steps" data-os="windows" hidden>
+        <p class="os-name">Windows</p>
+        <div class="steps">
+          <article>
+            <span>01</span>
+            <h3>Unzip it</h3>
+            <p>Open the zip and leave the ShiroWisper folder where you want it.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Open it</h3>
+            <p>Double-click ShiroWisper. If Windows says it protected your PC, choose More info, then Run anyway.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Allow the microphone</h3>
+            <p>Windows asks once. Leave the ShiroWisper window open.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Add your key</h3>
+            <p>Paste a Gemini key from <a href="https://aistudio.google.com/apikey" rel="noopener">Google AI Studio</a>. Hold Right Alt to dictate. Double-tap it for hands-free. F9 edits a selection.</p>
+          </article>
+        </div>
+        <p class="note">Speech goes to Google. The key stays on this PC. Dictation is about half a cent a minute.</p>
+      </div>
+      <div class="os-steps" data-os="linux" hidden>
+        <p class="os-name">Linux</p>
+        <div class="steps">
+          <article>
+            <span>01</span>
+            <h3>Extract it</h3>
+            <p>Use the Linux download on most PCs. Use Linux ARM on an ARM laptop or a Raspberry Pi.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Install it</h3>
+            <p>Run install.sh. It can ask for your password once, to install the microphone and clipboard tools, and adds ShiroWisper to your apps.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Open it</h3>
+            <p>Start ShiroWisper and allow the microphone. Leave the window open.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Add your key</h3>
+            <p>Paste a Gemini key from <a href="https://aistudio.google.com/apikey" rel="noopener">Google AI Studio</a>. Hold Right Alt to dictate. Double-tap it for hands-free. F9 edits a selection.</p>
+          </article>
+        </div>
+        <p class="note">If the hotkey does nothing, the desktop is blocking global keys. An X11 session lets them through. Dictation is about half a cent a minute.</p>
+      </div>
     </section>
   </main>
 
   <footer>
     <p>ShiroWisper 1.0.0</p>
-    <a href="https://github.com/gfxroy/shirowisper/releases/download/v1.0.0/ShiroWisper-1.0.0.dmg">Download the disk image</a>
+    <a id="footer-download" href="https://github.com/gfxroy/shirowisper/releases/download/v1.0.0/ShiroWisper-1.0.0.dmg">Download</a>
   </footer>
+  <script>
+    const builds = {
+      mac: {
+        href: "https://github.com/gfxroy/shirowisper/releases/download/v1.0.0/ShiroWisper-1.0.0.dmg",
+        button: "Download for Mac",
+        fine: "Disk image · 21 MB · macOS 13 or later · Apple silicon",
+        title: "Open the disk image.",
+        lede: "Drag ShiroWisper onto Applications. macOS asks for permission once."
+      },
+      windows: {
+        href: "https://github.com/gfxroy/shirowisper/releases/download/v1.0.0/ShiroWisper-1.0.0-windows.zip",
+        button: "Download for Windows",
+        fine: "Zip · 25 MB · Windows 10 or later · 64-bit",
+        title: "Unzip and open it.",
+        lede: "Double-click ShiroWisper. Windows asks for the microphone once."
+      },
+      linux: {
+        href: "https://github.com/gfxroy/shirowisper/releases/download/v1.0.0/ShiroWisper-1.0.0-linux-x64.tar.gz",
+        button: "Download for Linux",
+        fine: "Archive · 34 MB · 64-bit",
+        title: "Extract and install it.",
+        lede: "Run install.sh. It adds ShiroWisper to your apps."
+      },
+      "linux-arm": {
+        href: "https://github.com/gfxroy/shirowisper/releases/download/v1.0.0/ShiroWisper-1.0.0-linux-arm64.tar.gz",
+        button: "Download for Linux ARM",
+        fine: "Archive · 29 MB · ARM64",
+        title: "Extract and install it.",
+        lede: "Run install.sh. It adds ShiroWisper to your apps."
+      }
+    };
+
+    function detect() {
+      const ua = navigator.userAgent || "";
+      const platform = navigator.platform || "";
+      if (/Android|iPhone|iPad|iPod/i.test(ua)) return "mac";
+      if (/Win/i.test(platform) || /Windows/i.test(ua)) return "windows";
+      if (/Linux|X11/i.test(platform) || /Linux/i.test(ua)) {
+        return /aarch64|arm64/i.test(ua) ? "linux-arm" : "linux";
+      }
+      return "mac";
+    }
+
+    function show(os) {
+      const build = builds[os] || builds.mac;
+      const button = document.getElementById("download");
+      const nav = document.getElementById("nav-download");
+      const foot = document.getElementById("footer-download");
+      button.href = build.href;
+      button.textContent = build.button;
+      nav.href = build.href;
+      foot.href = build.href;
+      document.getElementById("fine").textContent = build.fine;
+      document.getElementById("install-title").textContent = build.title;
+      document.getElementById("install-lede").textContent = build.lede;
+      document.querySelectorAll(".alts a").forEach((link) => {
+        link.setAttribute("aria-current", link.getAttribute("data-os") === os ? "true" : "false");
+      });
+      const steps = os === "linux-arm" ? "linux" : os;
+      document.querySelectorAll(".os-steps").forEach((block) => {
+        block.hidden = block.getAttribute("data-os") !== steps;
+      });
+    }
+
+    show(detect());
+    if (navigator.userAgentData && navigator.userAgentData.getHighEntropyValues) {
+      navigator.userAgentData.getHighEntropyValues(["architecture", "platform"]).then((value) => {
+        const name = (value.platform || "").toLowerCase();
+        const arm = /arm/i.test(value.architecture || "");
+        if (name.indexOf("windows") !== -1) show("windows");
+        else if (name.indexOf("linux") !== -1) show(arm ? "linux-arm" : "linux");
+        else if (name.indexOf("mac") !== -1) show("mac");
+      }).catch(function () {});
+    }
+  </script>
 </body>
 </html>
